@@ -15,4 +15,4 @@ serde_yaml = "0.9.25"
 
 [[bin]]
 name = "launch"
-path = "main.rs"
+path = "src/main.rs"
