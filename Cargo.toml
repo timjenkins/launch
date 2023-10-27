@@ -2,8 +2,10 @@
 name = "launch"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["Tim Jenkins"]
+license = "GPL-3.0"
+description = "Another window launcher for tmux, with profiles"
+repository = "https://github.com/timjenkins/launch"
 
 [dependencies]
 argh = "0.1.12"
