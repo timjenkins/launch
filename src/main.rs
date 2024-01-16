@@ -7,10 +7,11 @@ fn main() {
     let config_file = config::get_config();
 
     // Yes this processes some things twice, but by doing so,
-    // it allows the program to fail quickly if options are incorrect
+    // it allows the program to fail quickly on bad input
     validate_inputs(&cli_args, &config_file);
 
-    // TODO: need a better name for reconciliation of config file & cli args
+    // TODO: Rename configuration: need a better name for
+    // the reconciliation of config file & cli args
     let configuration = get_configuration(&cli_args, &config_file);
 
     launch(configuration, &config_file);
